@@ -1,10 +1,10 @@
-import {Component, OnInit} from '@angular/core';
-import {Post} from '../../models/post';
-import {PostService} from '../../services/post.service';
-import {Comment} from '../../models/comment';
-import {CommentService} from '../../services/comment.service';
-import {ToastrService} from 'ngx-toastr';
-import {NgxSpinnerService} from 'ngx-spinner';
+import { Component, OnInit } from '@angular/core';
+import { Post } from '../../models/post';
+import { PostService } from '../../services/post.service';
+import { Comment } from '../../models/comment';
+import { CommentService } from '../../services/comment.service';
+import { ToastrService } from 'ngx-toastr';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-posts',
@@ -29,8 +29,7 @@ export class PostsComponent implements OnInit {
     public commentService: CommentService,
     public toastr: ToastrService,
     public spinner: NgxSpinnerService
-  ) {
-  }
+  ) { }
 
   ngOnInit() {
     this.spinner.show();
